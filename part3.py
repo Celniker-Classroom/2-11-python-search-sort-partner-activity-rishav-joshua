@@ -1,0 +1,37 @@
+#write your python code here
+
+#Import statement to use random generation
+from random import randint
+
+randNums = []
+
+#Adds a random number 10 times
+for i in range(10):
+    #Generates a random number, then appends it
+    randNums.append(randint(1,50))
+
+
+#SECTION 1
+searched = int(input("What number would you like to search for?"))
+
+if searched in randNums:
+    print(f"Generated list: {randNums} \n Searching for number: {searched} \n Number {searched} found in the list!")
+else:
+    print(f"Generated list: {randNums} \n Searching for number: {searched} \n Number {searched} not found in the list!")
+
+
+#SECTION 2
+smallest = min(randNums)
+
+#SECTION 3
+largest = max(randNums)
+
+#SECTION 4
+sum = 0
+
+for num in randNums:
+    sum += num
+
+#SECTION 5
+randNums.sort()
+

@@ -1,0 +1,27 @@
+{
+    "name": "Python Codespace (AI Chat Disabled)",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11", 
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // Install the official Microsoft Python extension
+                "ms-python.python",
+                "ms-python.debugpy" 
+                // You can *exclude* the Copilot extensions here if you want to 
+                // ensure they are not installed, though they may be built-in.
+                // Example: "github.copilot": false, 
+            ],
+            
+            // --- ADD THESE SETTINGS ---
+            "settings": {
+                // 1. Prevents the AI features (Chat & Inline Suggest) from running/displaying.
+                "chat.disableAIFeatures": true,
+
+                // 2. Prevents the side panel from opening by default when it contains AI chat.
+                // 'secondarySideBar' is the right-hand panel where AI chat typically opens.
+                "workbench.secondarySideBar.defaultVisibility": "hidden"
+            }
+        }
+    }
+}

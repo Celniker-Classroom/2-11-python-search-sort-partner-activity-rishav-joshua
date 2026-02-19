@@ -12,7 +12,7 @@ for i in range(10):
 
 
 #SECTION 1
-searched = int(input("What number would you like to search for?"))
+searched = int(input("What number would you like to search for? "))
 
 if searched in randNums:
     print(f"Generated list: {randNums} \n Searching for number: {searched} \n Number {searched} found in the list!")
@@ -35,3 +35,21 @@ for num in randNums:
 #SECTION 5
 randNums.sort()
 
+#SECTION 6
+
+import random
+from collections import Counter
+from itertools import chain
+
+data = [random.randint(1, 10) for _ in range(20)]
+print(f"Original List: {data}")
+
+frequency = Counter(data)
+print(f"Item Frequency: {dict(frequency)}")
+
+nested_list = [[1, 2], [3, 4], [5, 6]]
+flattened = list(chain.from_iterable(nested_list))
+print(f"Flattened List: {flattened}")
+
+weighted_sample = random.choices(data, k=5)
+print(f"Weighted Sample: {weighted_sample}")

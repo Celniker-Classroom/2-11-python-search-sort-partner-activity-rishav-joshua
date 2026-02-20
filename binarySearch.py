@@ -18,7 +18,7 @@ for i in range(13):
 randNums.sort()
 
 
-#Random integer to sort
+#Random integer to search
 searched = randint(1,20)
 
 

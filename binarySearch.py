@@ -8,8 +8,8 @@ from random import randint
 randNums = []
 
 
-#Adds a random number 10 times
-for i in range(10):
+#Adds a random number 13 times
+for i in range(13):
     #Generates a random number, then appends it
     randNums.append(randint(1,50))
 
